@@ -1,0 +1,188 @@
+/* ---------- CSS Variables ---------- */
+:root{
+    /* COLOR THEME */
+    --gold: #D9961A;
+    --black: #0D0D0D;
+    --lt-tan: #F2E3D5;
+    --taupe: #BFB2A3;
+    --teal: #3CA6A6;
+    --dk-teal: #014034;
+    --lt-teal: #36BFB1;
+    --lt-green: #038C73;
+    --md-green: #02735E;
+    --pink: #D8A39D;
+    --green: #354842;
+    --tan: #867559;
+    --gold2: #F2CB05;
+
+    /* OTHER FONT COLORS */
+    --white: #fff;
+    --lt-gray: #eaeaea;
+    --med-gray: #555;
+
+    /* ADOBE FONT FAMILY */
+    --fonts: "amandine", sans-serif;
+}
+
+/* BACKGROUND STYLE */
+body{ 
+    background-image: url("images/leafy-background.png");
+    max-width: 1280px;
+}
+
+/* HEADER STYLES */
+header{
+    gap: 1rem;
+    justify-content: space-between;
+    background-color: var(--dk-teal);
+    padding: 1rem 0 0 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    font-family: var(--fonts);
+    border-bottom: 8px solid var(--black);
+}
+h1{
+    display: flex;
+    font-size: 2.5rem;
+    margin-top: 0; margin-bottom: 1rem; margin-left: 1rem;
+    font-family: var(--fonts);
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    text-decoration: none;
+    color: var(--gold);
+    height: 6px;
+}
+
+/* NAV STYLES */
+nav ul{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    gap: 1rem;
+    margin-top: 0; margin-right: 1rem; margin-bottom: 1rem;
+    height: 6px;
+}
+nav a{
+    background-color: var(--black);
+    color: var(--lt-teal);
+    text-decoration: none;
+    border-radius: 12px;
+    padding: 6px;
+    font: var(--fonts);
+}
+
+nav a:hover{
+    color:var(--gold2);
+    text-decoration: underline;
+}
+/* HEADER IMG STYLE */
+header img{
+    display: block;
+    margin: 0;
+    padding-top: 2rem;
+    width: 100%
+}
+/* MAIN STYLES */
+main{
+    line-height: 2;
+    font-family: var(--fonts);
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+}
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 1000px;
+}
+#content-left{
+    display: grid;
+    grid-column: 1/2;
+    padding-bottom: 1rem;
+    max-width: 450px;
+    margin-left: 4rem;
+}
+#content-left h2{
+    grid-column: 1/2;
+    text-align: left;
+    
+    font-size: 2rem;
+    font-family: var(--fonts);
+    font-weight: 600;
+    font-style: normal;
+    color: var(--gold2);
+}
+#content-left p{
+    grid-column: 1/2;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--lt-tan);
+    line-height: 1.5rem;
+    justify-content: left;
+    width: 35ch;
+}
+#content-left img{
+    grid-column: 1/2;
+    border-radius: 12px;
+}
+
+#content-right{
+    display: grid;
+    grid-column: 2/3;
+    padding: 1rem 2rem 1rem 2rem;
+    color: var(--lt-tan);
+    background-color: var(--green);
+    border-radius: 12px;
+    margin-top: 2rem; margin-right: 4rem;
+    height: 650px;
+}
+#content-right p{
+    line-height: 1.5rem;
+}
+input, select, textarea{
+	padding: 5px;
+	font-size: 1.25rem;
+	margin-bottom: 12px;
+	border-radius: 4px;
+	border: 4px inset var(--lt-teal);
+	background-color: var(--lt-tan);
+}
+input[type="submit"]{
+	background-color: var(--lt-teal);
+	color: var(--med-gray);
+    font: var(--fonts);
+	font-size: 1.2rem;
+	font-weight: 550;
+    padding: 0.5rem;
+}
+input[type="submit"]:hover{
+	background-color: var(--lt-tan);
+}
+
+/* FOOTER STYLES */
+footer{
+    padding: 1rem;
+    background-color: var(--md-green);
+    border-radius: 12px;
+    text-align: center;
+    font-family: var(--fonts);
+    color: var(--lt-tan);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 0.5;
+    width: 100%;
+    max-width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: center;
+}
